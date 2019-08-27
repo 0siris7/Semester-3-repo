@@ -1,0 +1,78 @@
+***************************************************************************
+NAME:FEBIN EMMANUEL                                            EXPT.NO:3
+DATE:29/01/2019                                                ROLL NO:24
+                                                               BATCH : CSA
+                     ADDITION OF TWO SINGLE DIGIT NUMBER
+***************************************************************************
+PRINT MACRO M
+MOV DX,OFFSET M
+MOV AH,09H
+INT 21H
+ENDM
+
+ASSUME CS:CODE,DS:DATA
+DATA SEGMENT
+A1 DB 'ENTER FIRST NUMBER',0ah,0dh,'$'	
+A2 DB 'ENTER SECOND NUMBER',0ah,0dh,'$'
+A3 DB 'SUM',0ah,0dh,'$'
+DATA ENDS
+
+CODE SEGMENT
+START:
+MOV AX,DATA
+MOV DS,AX
+PRINT A1
+MOV AH,01H
+INT 21H
+SUB AL,30H
+MOV CL,AL
+PRINT A2
+MOV AH,01H
+INT 21H
+SUB AL,30H
+ADD AL,CL
+ADD AL,30H
+MOV BL,AL
+PRINT A3
+MOV DL,BL
+MOV AH,02H
+INT 21H
+MOV AH,4CH
+INT 21H
+CODE ENDS
+END START	
+***************************************************************************
+OUTPUT
+
+Z:\S6>masm exp3.asm
+Microsoft (R) MASM Compatibility Driver
+Copyright (C) Microsoft Corp 1993.  All rights reserved.
+
+ Invoking: ML.EXE /I. /Zm /c /Ta exp3.asm
+
+Microsoft (R) Macro Assembler Version 6.14.8444
+Copyright (C) Microsoft Corp 1981-1997.  All rights reserved.
+
+ Assembling: exp3.asm
+
+Z:\S6>link exp3.obj
+
+Microsoft (R) Segmented Executable Linker  Version 5.60.339 Dec  5 1994
+Copyright (C) Microsoft Corp 1984-1993.  All rights reserved.
+
+Run File [exp3.exe]:
+List File [nul.map]:
+Libraries [.lib]:
+Definitions File [nul.def]:
+LINK : warning L4021: no stack segment
+
+Z:\S6>exp3
+ENTER FIRST NUMBER
+1ENTER SECOND NUMBER
+2SUM
+3
+Z:\S6>
+
+
+
+***************************************************************************

@@ -1,0 +1,286 @@
+student@student-HP-Elite-7100-Microtower-PC:~$ cd Desktop
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ mkdir stud
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ rmdir stud
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ mkdir stud
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ mkdir stud/marks
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ ls stud
+marks
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~$ pwd
+/home/student
+student@student-HP-Elite-7100-Microtower-PC:~$ cat >test1
+hello
+hows it going
+student@student-HP-Elite-7100-Microtower-PC:~$ cat >test2
+im doing fine
+student@student-HP-Elite-7100-Microtower-PC:~$ cp test1 Desktop/stud
+student@student-HP-Elite-7100-Microtower-PC:~$ cp test2 Desktop/stud
+student@student-HP-Elite-7100-Microtower-PC:~$ ls stud
+ls: cannot access 'stud': No such file or directory
+student@student-HP-Elite-7100-Microtower-PC:~$ cd Desktop
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ ls stud
+marks  test1  test2
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cd stud
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/stud$ mv test1 test11
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/stud$ mv test2 test22
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/stud$ ls
+marks  test11  test22
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/stud$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~$ pwd
+/home/student
+student@student-HP-Elite-7100-Microtower-PC:~$ mkdir filefest
+student@student-HP-Elite-7100-Microtower-PC:~$ man listing
+No manual entry for listing
+student@student-HP-Elite-7100-Microtower-PC:~$ man list
+No manual entry for list
+student@student-HP-Elite-7100-Microtower-PC:~$ ls
+abc            evenodd.java      filefest         m2        riya
+addition       examples.desktop  Hai              m3        Server.java
+addition.java  f1                helloworld       m4        studs
+Bclient3.java  f3                helloworld.java  m8        Templates
+Bclient.java   f4                java.io.*        m9        test1
+Desktop        f5                java.net.*       Music     test2
+Documents      f6                java.util.*      Pictures  Videos
+Downloads      f7                m1               Public
+student@student-HP-Elite-7100-Microtower-PC:~$ cd filefest
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ mkdir pigstaye
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ mkdir north gate
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ rmdir pigstaye
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ rmdir north gate
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ mkdir pigstage
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ mkdir north gate
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ mkdir rockstage
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ ls
+gate  north  pigstage  rockstage
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ rmdir gate
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ rmdir north
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ mkdir northgate
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ ls
+northgate  pigstage  rockstage
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ touch kelly northgate
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ ls northgate
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ cd northgate
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/northgate$ ls
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/northgate$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ cd northgate
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/northgate$ touch kelly
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/northgate$ ls
+kelly
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/northgate$ touch nicole
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/northgate$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ ls northgate
+kelly  nicole
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ cd northgate
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/northgate$ rm kelly
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/northgate$ rm nicole
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/northgate$ touch john
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/northgate$ ls
+john
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/northgate$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ cd pigstage
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/pigstage$ touch kelly
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/pigstage$ touch nicole
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/pigstage$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ cd rockstage
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/rockstage$ mkdir bleachesstudent@student-HP-Elite-7100-Microtower-PC:~/filefest/rockstage$ rmdir bleachesstudent@student-HP-Elite-7100-Microtower-PC:~/filefest/rockstage$ mkdir bleachers
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/rockstage$ ls
+bleachers
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/rockstage$ cd bleachers
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/rockstage/bleachers$ touch kevin
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/rockstage/bleachers$ ls
+kevin
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/rockstage/bleachers$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/rockstage$ touch kyle
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/rockstage$ touch deni
+student@student-HP-Elite-7100-Microtower-PC:~/filefest/rockstage$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ ls -IR
+kelly  northgate  pigstage  rockstage
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ ls -ir
+1714240 rockstage  1714237 pigstage  1706908 northgate  1707260 kelly
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ ls - ir > listing
+ls: cannot access '-': No such file or directory
+ls: cannot access 'ir': No such file or directory
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ ls -ir >listing
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ ls
+kelly  listing  northgate  pigstage  rockstage
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ cat listing
+1714240 rockstage
+1714237 pigstage
+1706908 northgate
+1707773 listing
+1707260 kelly
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ ls
+kelly  listing  northgate  pigstage  rockstage
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$  mv pigstage/kelly northgate
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ ls northgate
+john  kelly
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ mv pigstage/nicole northgate
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ mv rockstage/deni northgate
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ mv rockstage/kyle northgate
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ ls rockstage
+bleachers
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ ls northstage
+ls: cannot access 'northstage': No such file or directory
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ ls northgate
+deni  john  kelly  kyle  nicole
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ mv rockstage/bleachers/kevin northgate
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ ls northgate
+deni  john  kelly  kevin  kyle  nicole
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ rmdir pigstage
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ rmdir rockstage
+rmdir: failed to remove 'rockstage': Directory not empty
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ ls
+kelly  listing  northgate  rockstage
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ rm kelly
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ rm -r rockstage
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ ls
+listing  northgate
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ ls -lr
+total 8
+drwxrwxr-x 2 student student 4096 Jan 23 16:08 northgate
+-rw-rw-r-- 1 student student   83 Jan 23 16:04 listing
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ ls -lr >listing
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ cat listing
+total 4
+drwxrwxr-x 2 student student 4096 Jan 23 16:08 northgate
+-rw-rw-r-- 1 student student    0 Jan 23 16:13 listing
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ cd Desktop
+bash: cd: Desktop: No such file or directory
+student@student-HP-Elite-7100-Microtower-PC:~/filefest$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~$ cd Desktop
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ mkdir dept
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ mkdir dept/fin
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ mkdir dept/pers
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ mkdir dept/mkig
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ mkdir dept/fin/exp
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ mkdir dept/fin/ine
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ ls dept/fin
+exp  ine
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ ls dept
+fin  mkig  pers
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ mkdir dept/pers/admn
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ mkdir dept/pers/pay
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ mk hello
+mk: command not found
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ mkdir test1
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ touch >hello test1
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ rm -r test1
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ rm -r hello
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cat >dept/fin/exp/ent.txtstudent@student-HP-Elite-7100-Microtower-PC:~/Desktop$ ls dept/fin/exp
+ent.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cat >dept/fin/exp/postage.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cd dept/fin
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/fin$ mv ine inc
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/fin$ ls
+exp  inc
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/fin$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ cd
+student@student-HP-Elite-7100-Microtower-PC:~$ cd Desktop
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cat >dept/fin/inc/fees.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cat >dept/fin/inc/sales.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ ls dept/fin/inc
+fees.txt  sales.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ ls dept/fin/exp
+ent.txt  postage.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ ls dept
+fin  mkig  pers
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cd dept
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ mv mkig mktg
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ ls
+fin  mktg  pers
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cat >dept/mktg/salesinfo.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cat >dept/mktg/pur.txtstudent@student-HP-Elite-7100-Microtower-PC:~/Desktop$ ls dept/mktg
+pur.txt  salesinfo.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ ls dept
+fin  mktg  pers
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ ls dept/pers
+admn  pay
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cat >dept/pers/admn/exp.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cat >dept/pers/admn/reco.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cat >dept/pers/pay/add.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cat >dept/pers/pay/ded.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cp dept/pers/pay/ded.txt dept/mktg
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ ls dept/mktg
+ded.txt  pur.txt  salesinfo.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ mv dept/mktg/ded.txt dedue
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ rm dedue
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cd dept/mktg
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/mktg$ ls
+pur.txt  salesinfo.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/mktg$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ ls
+fin  mktg  pers
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ ls pers
+admn  pay
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ cd pay
+bash: cd: pay: No such file or directory
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ ls
+fin  mktg  pers
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ ls
+fin  mktg  pers
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ cd pers
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/pers$ ls
+admn  pay
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/pers$ cd pay
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/pers/pay$ ls
+add.txt  ded.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/pers/pay$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/pers$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ cp pers/pay/ded.txt mktg
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ ls mktg
+ded.txt  pur.txt  salesinfo.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ cd mktg
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/mktg$ mv ded dedue
+mv: cannot stat 'ded': No such file or directory
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/mktg$ mv ded.txt dedue.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/mktg$ ls
+dedue.txt  pur.txt  salesinfo.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/mktg$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ cp mktg/salesinfo.txt pers/pay
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ ls pers/pay
+add.txt  ded.txt  salesinfo.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ mv pers/pay/salesinfo.txt fin/exp
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ cd fin/exp
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/fin/exp$ ls
+ent.txt  postage.txt  salesinfo.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/fin/exp$ mv salesinfo.txt sinfo.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/fin/exp$ ls
+ent.txt  postage.txt  sinfo.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/fin/exp$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/fin$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ cp fin/exp/sinfo.txt fin
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ ls
+fin  mktg  pers
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ ls fin
+exp  inc  sinfo.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ cd fin/exp
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/fin/exp$ rm sinfo.txtstudent@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/fin/exp$ ls
+ent.txt  postage.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/fin/exp$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/fin$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ cd fin/exp
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/fin/exp$ mv postage.txt pexp.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/fin/exp$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/fin$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ mv fin/exp/pexp.txt pers
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ ls pers
+admn  pay  pexp.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ man ln
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ cd pers
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/pers$ ln pexp.txt pers
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/pers$ ls
+admn  pay  pers  pexp.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/pers$ cat pers
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/pers$ rm pexp.txt
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/pers$ ls
+admn  pay  pers
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept/pers$ cd ..
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ man ls
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ man ls
+\student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ ls -e*
+ls: invalid option -- 'e'
+Try 'ls --help' for more information.
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop/dept$ 
+

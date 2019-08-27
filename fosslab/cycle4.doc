@@ -1,0 +1,114 @@
+student@student-HP-Elite-7100-Microtower-PC:~$ cat emp
+a
+student@student-HP-Elite-7100-Microtower-PC:~$ cat emp
+a
+student@student-HP-Elite-7100-Microtower-PC:~$ clear
+student@student-HP-Elite-7100-Microtower-PC:~$ cd Desktop
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cat emp
+112	John	Roy	Team Leader
+045	Yamuna	Sarath	Senior Engineer
+345	Delna	Wilson	Junior Engineer
+234	Lakshmi	Binu	Trainee
+567	Ganga	Vibin	Trainee
+568	Abja	Rajest	Trainee
+348	Alan	Wilson	Project Leader
+200	Reenu	Thomas	Trainee
+112	John	Roy	Team leader
+567	Ganga	Vibin	Trainee
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ wc -l emp
+10 emp
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ nl emp >emp1
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cat emp1
+     1	112	John	Roy	Team Leader
+     2	045	Yamuna	Sarath	Senior Engineer
+     3	345	Delna	Wilson	Junior Engineer
+     4	234	Lakshmi	Binu	Trainee
+     5	567	Ganga	Vibin	Trainee
+     6	568	Abja	Rajest	Trainee
+     7	348	Alan	Wilson	Project Leader
+     8	200	Reenu	Thomas	Trainee
+     9	112	John	Roy	Team leader
+    10	567	Ganga	Vibin	Trainee
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ grep John emp
+112	John	Roy	Team Leader
+112	John	Roy	Team leader
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cut -f1 emp >empid
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cat empid
+112
+045
+345
+234
+567
+568
+348
+200
+112
+567
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cut -f 2,3 emp
+John	Roy
+Yamuna	Sarath
+Delna	Wilson
+Lakshmi	Binu
+Ganga	Vibin
+Abja	Rajest
+Alan	Wilson
+Reenu	Thomas
+John	Roy
+Ganga	Vibin
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cut -f 2,3 emp >nameemp
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ tr [a-z] [A-Z] nameemp
+tr: extra operand ‘nameemp’
+Try 'tr --help' for more information.
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ tr [a-z] [A-Z] <nameemp
+JOHN	ROY
+YAMUNA	SARATH
+DELNA	WILSON
+LAKSHMI	BINU
+GANGA	VIBIN
+ABJA	RAJEST
+ALAN	WILSON
+REENU	THOMAS
+JOHN	ROY
+GANGA	VIBIN
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ tr [a-z] [A-Z] <nameemp >temp1
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ mv temp1 nameemp
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cat nameemp
+JOHN	ROY
+YAMUNA	SARATH
+DELNA	WILSON
+LAKSHMI	BINU
+GANGA	VIBIN
+ABJA	RAJEST
+ALAN	WILSON
+REENU	THOMAS
+JOHN	ROY
+GANGA	VIBIN
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ paste empid nameemp >emp2student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cat emp2
+112	JOHN	ROY
+045	YAMUNA	SARATH
+345	DELNA	WILSON
+234	LAKSHMI	BINU
+567	GANGA	VIBIN
+568	ABJA	RAJEST
+348	ALAN	WILSON
+200	REENU	THOMAS
+112	JOHN	ROY
+567	GANGA	VIBIN
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ sort -k2 emp2 >emp3
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ cat emp3
+568	ABJA	RAJEST
+348	ALAN	WILSON
+345	DELNA	WILSON
+567	GANGA	VIBIN
+567	GANGA	VIBIN
+112	JOHN	ROY
+112	JOHN	ROY
+234	LAKSHMI	BINU
+200	REENU	THOMAS
+045	YAMUNA	SARATH
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ rm emp2
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ sort -k1 emp >nemp
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ rm emp
+student@student-HP-Elite-7100-Microtower-PC:~/Desktop$ uniq -d nemp
+567	Ganga	Vibin	Trainee
+

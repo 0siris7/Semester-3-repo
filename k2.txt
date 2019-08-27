@@ -1,0 +1,58 @@
+***************************************************************************
+NAME:FEBIN EMMANUEL                                            EXPT.NO:1
+DATE:29/01/2019                                                ROLL NO:24
+                                                               BATCH : CSA
+                     DISPLAY A MESSAGE
+***************************************************************************
+ASSUME CS:CODE,DS:DATA
+DATA SEGMENT
+N1 DB 'Hello World$'
+DATA ENDS
+
+CODE SEGMENT
+START
+MOV AX,DATA
+MOV DS,AX
+MOV DX,OFFSET N1
+MOV AH,09H
+INT 21H
+MOV AH,4CH
+INT 21H
+CODE ENDS
+END START	
+***************************************************************************
+OUTPUT
+
+
+C:\>Z:
+
+Z:\>CD S6
+
+Z:\S6>set path="D:\masm\bin"
+
+Z:\S6>masm exp1.asm
+Microsoft (R) MASM Compatibility Driver
+Copyright (C) Microsoft Corp 1993.  All rights reserved.
+
+ Invoking: ML.EXE /I. /Zm /c /Ta exp1.asm
+
+Microsoft (R) Macro Assembler Version 6.14.8444
+Copyright (C) Microsoft Corp 1981-1997.  All rights reserved.
+
+ Assembling: exp1.asm
+
+Z:\S6>link exp1.obj
+
+Microsoft (R) Segmented Executable Linker  Version 5.60.339 Dec  5 1994
+Copyright (C) Microsoft Corp 1984-1993.  All rights reserved.
+
+Run File [exp1.exe]:
+List File [nul.map]:
+Libraries [.lib]:
+Definitions File [nul.def]:
+LINK : warning L4021: no stack segment
+
+Z:\S6>exp1
+Hello World
+
+***************************************************************************

@@ -1,0 +1,61 @@
+***************************************************************************
+NAME:JERIN THOMAS MATHEW                                       EXPT.NO:2
+DATE:29/01/2019                                                ROLL NO:29
+                                                               BATCH : CSA
+                     READ AND DISPLAY A CHARACTER
+***************************************************************************
+PRINT MACRO M
+MOV DX,OFFSET M
+MOV AH,09H
+INT 21H
+ENDM
+
+ASSUME CS:CODE,DS:DATA
+DATA SEGMENT
+MSG1 DB 'ENTER CHARACTER',0ah,0dh,'$'	
+DATA ENDS
+
+CODE SEGMENT
+START:
+MOV AX,DATA
+MOV DS,AX
+PRINT MSG1
+MOV AH,01H
+INT 21H
+MOV DL,AL
+MOV AH,02H
+INT 21H
+MOV AH,4CH
+INT 21H
+CODE ENDS
+END START	
+***************************************************************************
+OUTPUT
+
+Z:\S6>masm exp2.asm
+Microsoft (R) MASM Compatibility Driver
+Copyright (C) Microsoft Corp 1993.  All rights reserved.
+
+ Invoking: ML.EXE /I. /Zm /c /Ta exp2.asm
+
+Microsoft (R) Macro Assembler Version 6.14.8444
+Copyright (C) Microsoft Corp 1981-1997.  All rights reserved.
+
+ Assembling: exp2.asm
+
+Z:\S6>link exp2.obj
+
+Microsoft (R) Segmented Executable Linker  Version 5.60.339 Dec  5 1994
+Copyright (C) Microsoft Corp 1984-1993.  All rights reserved.
+
+Run File [exp2.exe]:
+List File [nul.map]:
+Libraries [.lib]:
+Definitions File [nul.def]:
+LINK : warning L4021: no stack segment
+
+Z:\S6>exp2
+ENTER CHARACTER
+aa
+Z:\S6>
+***************************************************************************
